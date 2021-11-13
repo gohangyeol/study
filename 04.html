@@ -1,0 +1,35 @@
+<html>
+    <body>
+        <button id="tab1"onclick="b1()">tab 1</button>
+        <button id="tab2"onclick="b2()">tab 2</button>
+        <button id="tab3"onclick="b3()">tab 3</button> <br>
+
+        <div id="t1" name="tab">
+            <h1>This is tab 1!</h1>
+        </div>    
+        <div id="t2" name="tab" style="display: none;">
+            <h1>This is tab 2!</h1>   
+        </div> 
+        <div id="t3" name="tab" style="display: none;">
+            <h1>This is tab 3!</h1>    
+        </div>    
+   
+        <script>
+            function b1(){
+                document.getElementById("t1").style="display"
+                document.getElementById("t2").style="display : none;"
+                document.getElementById("t3").style="display : none;"
+            }
+            function b2(){
+                document.getElementById("t1").style="display : none;"
+                document.getElementById("t2").style="display"
+                document.getElementById("t3").style="display : none;"
+            }
+            function b3(){
+                document.getElementById("t1").style="display : none;"
+                document.getElementById("t2").style="display : none;"
+                document.getElementById("t3").style="display"
+            }
+        </script>
+    </body>
+</html>

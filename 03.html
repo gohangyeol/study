@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <body>
+       
+        <button id="Left"onclick="Left()">&lt;</button>
+        <button id="Right"onclick="Right()">&gt;</button>
+        <br>
+        <img id= "img"src="https://w.namu.la/s/45507892b4f48b2b3d4a6386f6dae20c28376a8ef5dfb68c7cc95249ec358e3e68df77594766021173b2e6acf374b79ce02e9eeef61fcdf316659e30289e123fbddf6e5ec3492eddbc582ee5a59a2ff5d6ee84f57ad19277d179b613614364ad">
+    </body>
+        <script>
+               var a=[3]
+               var i=0;
+               a[0]="https://w.namu.la/s/45507892b4f48b2b3d4a6386f6dae20c28376a8ef5dfb68c7cc95249ec358e3e68df77594766021173b2e6acf374b79ce02e9eeef61fcdf316659e30289e123fbddf6e5ec3492eddbc582ee5a59a2ff5d6ee84f57ad19277d179b613614364ad"
+               a[1]="https://images.chosun.com/resizer/j2Y0B9UURMxRJ78H2GK6k-D29L4=/616x0/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/WHBUIBVTPD3SI3HCQOJFLNVGCE.jpg"
+               a[2]="https://cdn.topstarnews.net/news/photo/202110/14639600_706870_5046.jpg"
+
+               function Right(){
+                   if(i==2){
+                       return
+               }
+                    i++
+                    document.getElementById("img").src=a[i]
+            }
+            function Left(){
+                   if(i==0){
+                       return
+               }
+                    i--
+                    document.getElementById("img").src=a[i]
+            }
+        </script>
+</html>           
