@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h3>이름</h3>
+        <input id ="name" type="text" >
+        <br>
+        <h3>나이</h3>
+        <input id ="age" type="text">
+        <br>
+        <h3>아이디</h3>
+        <input id ="ID">
+        <br>
+        <h3>비번</h3>
+        <input id ="pw" type="password">
+        <br>
+        <h3>비번 재확인</h3>
+        <input id ="pwcheck" type="password">
+        <br>
+        <button id="btn" onclick="func()">확인</button>
+
+        <script>
+            function func(){
+                if(document.getElementById("name").value=="")
+                {
+                    alert("이름을 입력해주세요")
+                }
+                else if(document.getElementById("age").value.match(/[^0-9]+/))
+                {
+                    alert("나이를 숫자로 입력해주세요")
+                }
+                else if(document.getElementById("ID").value=="")
+                {
+                    alert("아이디를 입력해주세요")
+                }
+                else if(document.getElementById("pw").value=="")
+                {
+                    alert("비번을 입력해주세요")
+                }
+                else if(document.getElementById("pw").value==document.getElementById("pwcheck").value)
+                {
+                    alert("성공")
+                }
+                else
+                {
+                    alert("비번이 틀렸습니다")
+                }
+
+               
+            }
+        </script>
+
+
+
+        
+    <body>
+</html>            

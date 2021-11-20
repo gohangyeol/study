@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+        <Script>
+            String.prototype.ForEach=function(str,callback){
+                const ar1=this.split(str)
+            
+                for(let i=0; i<ar1.length; i++){
+                    callback(ar1[i],i);
+                }
+            }
+        </Script>
+    <body>
+</html>            
